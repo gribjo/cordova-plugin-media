@@ -237,6 +237,7 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
                     }
                 }
             }
+            deleteOnExit(this.tempFile);
         }
         // more than one file so the user must have pause recording. We'll need to concat files.
         else {
