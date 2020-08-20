@@ -693,7 +693,7 @@ BOOL keepAvAudioSessionAlwaysActive = NO;
             bool isWav=[[audioFile.resourcePath pathExtension] isEqualToString:@"wav"];
             NSMutableDictionary *audioSettings = [NSMutableDictionary dictionaryWithDictionary:
                                             @{AVSampleRateKey: @(44100),
-                                             AVNumberOfChannelsKey: @(1),
+                                             AVNumberOfChannelsKey: @(2),
                                              }];
             if (isWav)  {
                 audioSettings[AVFormatIDKey]=@(kAudioFormatLinearPCM);
